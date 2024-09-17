@@ -4,7 +4,7 @@ class Game {
         this.context = context;
         this.width = this.canvas.width;
         this.height = this.canvas.height;
-        this.player = new this.Player(this);
+        this.player = new Player(this);
     }
     render() {
         this.ctx.fillRect(100, 100, 50, 150);
