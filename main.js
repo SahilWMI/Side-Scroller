@@ -21,4 +21,11 @@ window.addEventListener('load', function(){
 
     const game = newGame(canvas,ctx);
     game.render();
+
+    function animate(){
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        game.render();
+        requestAnimationFrame(animate);
+    }
+    requestAnimationFrame(animate);
 });
