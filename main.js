@@ -1,13 +1,14 @@
 class Game {
     constructor(canvas, context){
         this.canvas = canvas;
-        this.context = context;
+        this.ctx = context;
         this.width = this.canvas.width;
         this.height = this.canvas.height;
         this.player = new Player(this);
     }
     render() {
-        this.ctx.fillRect(100, 100, 50, 150);
+        this.ctx.fillStyle = 'red';
+        this.player.draw();
     }
 }
 
