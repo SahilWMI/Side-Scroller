@@ -19,7 +19,7 @@ window.addEventListener('load', function(){
     canvas.width = 720;
     canvas.height = 720;
 
-    const game = newGame(canvas,ctx);
+    const game = new Game(canvas,ctx);
     game.render();
 
     function animate(){
