@@ -9,4 +9,7 @@ class Player {
     draw(){
         this.game.ctx.fillRect(this.x, this.y, this.width, this.height);
     }
+    update(){
+        this.x++;
+    }
 }
