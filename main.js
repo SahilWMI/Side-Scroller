@@ -8,6 +8,7 @@ class Game {
     }
     render() {
         this.ctx.fillStyle = 'red';
+        this.player.update();
         this.player.draw();
     }
 }
